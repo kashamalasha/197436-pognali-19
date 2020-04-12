@@ -6,8 +6,8 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo logo">
-      <span class="logo__title">Погнали?</span>
+    <div class="page-header__logo header-logo">
+      <span class="header-logo__title">Погнали?</span>
     </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -17,6 +17,73 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__header">Попутчики</h1>
+    <section class="country-filter">
+      <h2 class="country-filter__header">Фильтрация по странам</h2>
+      <button class="country-filter__toggle">
+        <span class="visually-hidden">Показать фильтр</span>
+      </button>
+    </section>
+    <section class="companion-filter">
+      <h2 class="companion-filter__header">Подберите идеального попутчика</h2>
+      <form class="companion-filter__form" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item">
+          <legend class="filter-item__header">Хобби</legend>
+        </fieldset>
+        <fieldset class="filter-item">
+          <legend class="filter-item__header">Музыка</legend>
+          <input class="filter-item__checkbox" type="checkbox" id="music-1" checked>
+          <label class="filter-item__label" for="music-1">Тяжелый рок</label>
+          <input class="filter-item__checkbox" type="checkbox" id="music-2">
+          <label class="filter-item__label" for="music-2">Русский рэп</label>
+          <input class="filter-item__checkbox" type="checkbox" id="music-3">
+          <label class="filter-item__label" for="music-3">Евроденс</label>
+        </fieldset>
+        <fieldset class="filter-item">
+          <legend class="filter-item__header">Еда</legend>
+        </fieldset>
+        <fieldset class="filter-item">
+          <legend class="filter-item__header">Транспорт</legend>
+          <input class="visually-hidden" type="checkbox" id="transport-1" checked>
+          <label class="filter-item__label" for="transport-1">
+            <img class="filter-item__label-image" src="img/plane.svg" width="14" height="16" alt="Самолет">
+            <span class="visually-hidden">Самолет</span>
+          </label>
+          <input class="visually-hidden" type="checkbox" id="transport-2" checked>
+          <label class="filter-item__image" for="transport-2">
+            <img class="filter-item__label-image" src="img/bus.svg" width="13" height="16" alt="Автобус">
+            <span class="visually-hidden">Автобус</span>
+          </label>
+          <input class="visually-hidden" type="checkbox" id="transport-3">
+          <label class="filter-item__image" for="transport-3">
+            <img class="filter-item__label-image" src="img/bike.svg" width="19" height="17" alt="Велосипед">
+            <span class="visually-hidden">Велосипед</span>
+          </label>
+          <input class="visually-hidden" type="checkbox" id="transport-4" checked>
+          <label class="filter-item__image" for="transport-4">
+            <img class="filter-item__label-image" src="img/run.svg" width="15" height="17" alt="Пешие прогулки">
+            <span class="visually-hidden">Пешие прогулки</span>
+          </label>
+        </fieldset>
+        <fieldset class="filter-item">
+          <legend class="filter-item__header">Левел</legend>
+          <div class="level-controls">
+            <input class="level-controls__input" id="min-level" type="text" name="min-level" value="30">
+            <label class="visually-hidden" for="min-level">от</label>
+            <span>—</span>
+            <input class="level-controls__input" id="max-level" type="text" name="min-level" value="100">
+            <label class="visually-hidden" for="max-level">до</label>
+          </div>
+          <div class="range-controls">
+            <div class="range-controls__scale">
+              <div class="range-controls__scale-bar"></div>
+            </div>
+            <div class="range-controls__toggle range-controls__toggle--max"></div>
+            <div class="range-controls__toggle range-controls__toggle--min"></div>
+          </div>
+        </fieldset>
+        <button class="companion-filter__show show-button" type="submit">Показать</button>
+      </form>
+    </section>
     <section class="companions">
       <h2 class="visually-hidden">Попутчики</h2>
       <ul class="companions-list paginated-list">
@@ -225,23 +292,23 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo logo">
-      <span class="logo__title">Погнали?</span>
+    <div class="page-footer__logo footer-logo">
+      <span class="footer-logo__title">Погнали?</span>
     </div>
     <div class="page-footer__social">
       <ul class="social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
+        <li class="social-item">
+          <a class="social-item__link social-item__link--vkontakte" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
+        <li class="social-item">
+          <a class="social-item__link social-item__link--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">
+        <li class="social-item">
+          <a class="social-item__link social-item__link--instagram" href="#">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
