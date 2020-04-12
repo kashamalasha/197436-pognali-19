@@ -6,8 +6,8 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo logo">
-      <span class="logo__title">Погнали?</span>
+    <div class="page-header__logo header-logo">
+      <span class="header-logo__title">Погнали?</span>
     </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -216,25 +216,57 @@
         Показать тарифы для бизнеса
       </a>
     </section>
+    <section class="contacts">
+      <h2 class="contacts__header">Заинтересовались?</h2>
+      <p class="contacts__text">
+        Зарегистрируйтесь, это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее
+        <span class="contacts__text contacts__text--decorated">авторизуйтесь!</span>
+      </p>
+      <form class="contacts__form send-email" action="https://echo.htmlacademy.ru/">
+        <input class="send-email__address" type="email" placeholder="E-mail">
+        <input class="send-email__submit" type="submit">
+      </form>
+      <p class="contacts__text">
+        Остались вопросы?
+        Мы с радостью на них ответим!
+      </p>
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <img class="contacts-list__item-image" src="img/contacts-phone.svg" width="18" height="18" alt="Телефон">
+          <a class="contacts-list__item-link" href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contacts-list__item">
+          <img class="contacts-list__item-image" src="img/contacts-mail.svg" width="18" height="13" alt="Электронная почта">
+          <a class="contacts-list__item-link" href="email:">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <p class="address">
+        <img class="address__image" src="img/contacts-location.svg" width="14" height="22" alt="Расположение">
+        <span class="address__text">ул. Большая Конюшенная, 19/8</span>
+      </p>
+      <a class="map__navigate-button" href="#">Проложить маршрут</a>
+      <img class="map__preview-image" src="https://via.placeholder.com/320x546" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
+    </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo logo">
-      <span class="logo__title">Погнали?</span>
+    <div class="page-footer__logo footer-logo">
+      <span class="footer-logo__title">Погнали?</span>
     </div>
     <div class="page-footer__social">
       <ul class="social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
+        <li class="social-item">
+          <a class="social-item__link social-item__link--vkontakte" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
+        <li class="social-item">
+          <a class="social-item__link social-item__link--facebook" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">
+        <li class="social-item">
+          <a class="social-item__link social-item__link--instagram" href="#">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
