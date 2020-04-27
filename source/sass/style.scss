@@ -1,5 +1,6 @@
-@import "global", "fonts",
-  "blocks/visually-hidden",
+@import "global", "fonts";
+@import "visually-hidden";
+@import
   "blocks/about",
   "blocks/companion",
   "blocks/companions-list",
@@ -32,4 +33,6 @@
   "blocks/transport",
   "blocks/level",
   "blocks/page-buttons",
-  "blocks/main-nav";
+  "blocks/main-nav",
+  "blocks/contacts",
+  "blocks/send-email";
