@@ -1,6 +1,7 @@
-@import "global", "fonts",
-  "blocks/visually-hidden",
-  "blocks/about",
+@import "variables", "mixins";
+@import "global", "fonts";
+@import "visually-hidden";
+@import "blocks/about",
   "blocks/companion",
   "blocks/companions-list",
   "blocks/companions",
@@ -32,4 +33,15 @@
   "blocks/transport",
   "blocks/level",
   "blocks/page-buttons",
-  "blocks/main-nav";
+  "blocks/main-nav",
+  "blocks/contacts",
+  "blocks/send-email",
+  "blocks/contacts-list",
+  "blocks/map",
+  "blocks/about-me",
+  "blocks/plans",
+  "blocks/plan-options",
+  "blocks/add-plan",
+  "blocks/step",
+  "blocks/todo-list",
+  "blocks/filter-item";
